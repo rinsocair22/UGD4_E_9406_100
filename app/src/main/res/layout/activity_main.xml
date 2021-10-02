@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4D8CE8"
+        android:padding="15dp"
+        android:text="welcome"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#D32F2F"
+        android:text="logout" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        app:menu="@menu/bottom_navigation_menu" />
+
+</LinearLayout>
